@@ -1,9 +1,9 @@
 Package: penguinclassify
-Title: What the Package Does (One Line, Title Case)
+Title: Classify the type of penguin
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Daniel", "Chen", , "daniel.chen@stat.ubc.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "YO0000-0003-3857-1741UR-ORCID-ID"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
