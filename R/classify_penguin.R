@@ -12,6 +12,9 @@
 #' # example code
 #' classify_penguin(10, 100)
 classify_penguin <- function(bill_length, flipper_length) {
+  # if (is.na(bill_length)) {
+  #   return(NA)
+  # }
   if (flipper_length > 205) {
     return("Gentoo")
   } else {
