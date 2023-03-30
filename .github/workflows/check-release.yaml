@@ -1,10 +1,20 @@
-on: [push, pull_request]
+on: [push, pull_request, workflow_dispatch]
 
 name: R-CMD-check
 
 jobs:
   R-CMD-check:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.config.os }}
+
+    name: ${{ matrix.config.os }} (${{ matrix.config.r }})
+
+    strategy:
+      matrix:
+        config:
+          - {os: windows-latest,  r: 'devel'}
+          - {os: windows-latest, r: 'release'}
+          - {os: ubuntu-latest,   r: 'devel'}
+          - {os: ubuntu-latest,   r: 'release'}
     
     steps:
       - name: Checkout files from GitHub version control repository
