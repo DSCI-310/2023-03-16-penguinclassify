@@ -12,3 +12,13 @@ dataframe of 1 column from the palrmer penguins dataframe
 \description{
 Returns the species column for Palmerpenguins
 }
+\examples{
+get_species()
+
+\dontrun{
+# this code will not run
+# please always put in working code
+get_species(thisdoesnotwork)
+}
+
+}

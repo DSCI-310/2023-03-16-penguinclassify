@@ -3,6 +3,17 @@
 #' @export
 #'
 #' @importFrom rlang .data
+#'
+#'
+#' @examples
+#' get_species()
+#'
+#' \dontrun{
+#' # this code will not run
+#' # please always put in working code
+#' get_species(thisdoesnotwork)
+#'}
+#'
 get_species <- function() {
   palmerpenguins::penguins %>%
     dplyr::select(.data$species)
